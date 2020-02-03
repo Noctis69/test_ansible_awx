@@ -1,0 +1,8 @@
+---
+- name: Windows create
+  hosts: all
+  gather_facts: false
+  tasks:
+     -tasks:
+        - name: Creation de l'arboresence
+          win_shell: New-Item -Path c:\ -Name Temp2 -ItemType Directory | New-Item -Path c:\Temp2\ -Name test -ItemType Directory
